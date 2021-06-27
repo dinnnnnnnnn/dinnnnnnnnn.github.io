@@ -22,6 +22,13 @@ button{
     text-decoration: none;
     align-self: flex-start;
 }
+  .fireworks{
+            position: relative;
+            left:10;
+            top:10;
+            height: 100%;
+            width: 100%;
+        }
   
  </style>
 </head>
@@ -80,5 +87,16 @@ swalWithBootstrapButtons.fire({
 <audio autoplay controls>
   <source src="aa.mp3" type="audio/mp3" >
 </audio>
+<div class="fireworks"></div>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="fireworks/jquery.fireworks.js"></script>
+   <script>
+        $('.fireworks').fireworks({
+          sound: false, // sound effect
+          opacity: 0,
+          width: '20%',
+          height: '20%'
+        });
+    </script>
 </body>
 </html>
